@@ -12,3 +12,24 @@ Start Application
     
 Start Worker Consumer
 - yarn start: dev workers
+
+---
+
+Endpoint Sum [Sync]
+```
+curl --location 'http://localhost:3000/sum' \
+--header 'Content-Type: application/json' \
+--data '{
+    "data": [9,10]
+}'
+```
+
+
+Endpoint Multiply [Async]
+```
+curl --location 'http://localhost:3000/multiply_by_two' \
+--header 'Content-Type: application/json' \
+--data '{
+    "data": 3
+}'
+```
