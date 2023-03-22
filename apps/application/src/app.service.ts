@@ -7,10 +7,7 @@ export class AppService {
   constructor(@Inject(Services.MATH_SERVICE) private client: ClientProxy) {}
 
   async sum(data: number[]) {
-    this.client.send({ cmd: 'sum' }, data);
-    return {
-      "message": `Data is processing ${data}`
-    } 
+    return this.client.send({ cmd: 'sum' }, data);
   }
 
   async multiplyByTwo(data: number) {
