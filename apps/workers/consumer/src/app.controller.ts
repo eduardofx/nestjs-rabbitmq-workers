@@ -5,8 +5,6 @@ import { EventPattern, MessagePattern } from '@nestjs/microservices';
 export class AppController {
   @MessagePattern({ cmd: 'sum' })
   async sum(data: number[]): Promise<number> {
-    console.log(data)
-    console.log('##########')
     return (data || []).reduce((a, b) => a + b);
   }
 
