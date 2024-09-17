@@ -2,7 +2,7 @@
   "name": "nestjs-rabbitmq",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "eduardok.fx@gmail.com",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
